@@ -151,8 +151,6 @@ public class InCallTouchUi extends FrameLayout
             mIncomingRotarySelectorCallWidget.setRightHandleResource(R.drawable.ic_jog_dial_decline);
             mIncomingRotarySelectorCallWidget.setOnDialTriggerListener(this);
 
-            mIncomingRotarySelectorCallWidget.hideArrows(mRotaryHideArrows);
-
             mIncomingRingSelectorCallWidget = (RingSelector) findViewById(R.id.incomingRingSelectorCallWidget);
             mIncomingRingSelectorCallWidget.enableMiddleRing(false);
             mIncomingRingSelectorCallWidget.setOnRingTriggerListener(this);
