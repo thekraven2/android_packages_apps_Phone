@@ -774,11 +774,7 @@ public class InCallTouchUi extends FrameLayout
         int ringlockStyle = Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.RINGLOCK_STYLE_PREF,
                 RinglockStyle.getIdByStyle(RinglockStyle.Bubble));
-<<<<<<< HEAD
-         int resRingGreen = (ringlockStyle == RinglockStyle.getIdByStyle(RinglockStyle.Bubble) ?
-=======
         int resRingGreen = (ringlockStyle == RinglockStyle.getIdByStyle(RinglockStyle.Bubble) ?
->>>>>>> 06c7095
                 com.android.internal.R.drawable.jog_ring_ring_green :
                 com.android.internal.R.drawable.jog_ring_rev_ring_green);
         int resRingRed = (ringlockStyle == RinglockStyle.getIdByStyle(RinglockStyle.Bubble) ?
@@ -802,13 +798,8 @@ public class InCallTouchUi extends FrameLayout
         // Look up the various UI elements.
         // This needs to be called every Incoming Call to recheck settings
 	updateInCallStyle();
-<<<<<<< HEAD
         mIncomingRotarySelectorCallWidget.setVisibility(mUseRotaryInCall ? View.VISIBLE : View.GONE);
         mIncomingSlidingTabCallWidget.setVisibility((mUseRotaryInCall || mUseRingInCall) ? View.GONE : View.VISIBLE);
-=======
-	mIncomingRotarySelectorCallWidget.setVisibility(mUseRotaryInCall ? View.VISIBLE : View.GONE);
-	mIncomingSlidingTabCallWidget.setVisibility((mUseRotaryInCall || mUseRingInCall) ? View.GONE : View.VISIBLE);
->>>>>>> 06c7095
         mIncomingRingSelectorCallWidget.setVisibility(mUseRingInCall ? View.VISIBLE : View.GONE);
 
 
